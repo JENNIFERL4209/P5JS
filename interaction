@@ -4,40 +4,43 @@
 <head>
     <title>p5js Template</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.js"></script>
-    
+
     <script>
-        
         var shapes;
-        
+
         function setup() {
-            createCanvas(800,600);
+            createCanvas(800, 600);
             shapes = ellipse;
         }
 
         function draw() {
-           
+
         }
+
         function mouseMoved() {
             shapes = ellipse; //when mouse moves; shapes = ellipse
-            fill(random(0,255),random(0,255),random(0,255));
-            shapes(mouseX,mouseY,random(0,255),random(0,255));
+            fill(random(0, 255), random(0, 255), random(0, 255));
+            shapes(mouseX, mouseY, random(0, 255), random(0, 255));
         }
-        
+
         function mousePressed() {
-            background(random(0,255),random(0,255),random(0,255));
+            background(random(0, 255), random(0, 255), random(0, 255));
         }
-        
+
         function keyPressed() {
-            fill(random(0,255),random(0,255),random(0,255));
+            fill(random(0, 255), random(0, 255), random(0, 255));
             shapes = rect; //when key pressed; shapes = rect instead of ellipse
-            shapes = rect(mouseX,mouseY,random(10,90),random(10,100));
+            shapes = rect(mouseX, mouseY, random(10, 90), random(10, 100));
         }
     </script>
 </head>
+
 <body>
     <div id="code" class="container-fluid">
         <script src="https://gist-it.appspot.com/github/jenniferl4209/p5js/blob/gh-pages/interaction.html?footer=0"></script>
     </div>
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
     <script>
         $(window).bind("load", function() {
@@ -45,4 +48,6 @@
         });
     </script>
 </body>
+
+
 </html>
