@@ -44,11 +44,11 @@
             //if ball is outside of canvas & touches the corner
             if (ballX < 0 || ballX > width) {
                 ballSpeedX = ballSpeedX * -1.2; //change the direction of ball + ball speeds up
-                paddleWidth = paddleWidth -1.1; //paddle get shorter
+                paddleWidth = paddleWidth -1.1; //paddle get shorter constantly
             }
             if (ballY < 0) {
                 ballSpeedY = ballSpeedY * -1.2; //change direction + ball speeds up
-                paddleWidth = paddleWidth -1.1; //paddle get shorter
+                paddleWidth = paddleWidth -1.1; //paddle get shorter constantly
             }
             //if ball touches the paddle & change direction
             if (ballY > height - paddleHeight) {
